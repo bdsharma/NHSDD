@@ -1,0 +1,99 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v11.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+About this service - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">About this service</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      About this service
+    </h1>
+
+</div>
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- <h2 id="about">About this service</h2> -->
+    <h2 id="about">What this service does</h2>
+    <p>The directory is a source of recognised standards used by technologies in health and adult social care to exchange data in England.</p>
+
+<p>It is a signposting service only. It doesn’t include the full documentation for each standard. This can be found on the standard owner’s website.</p>
+
+<p>This service is currently in development and is being tested and improved based on feedback. To report a problem or make a suggestion, email <a href="mailto:england.interop.standards@nhs.net">england.interop.standards@nhs.net</a>.
+
+<p><a href="what">Find out more about standards.</a></p>
+<!-- <p><a href="#top">Back to the top</a></p> -->
+
+<!--  -->
+    <h2 id="who">Who this service is for</h2>
+    <p>This service is for anyone building or buying digital technologies for the NHS or local authority-funded adult social care services in England.</p>
+
+<p>This includes IT suppliers, healthcare providers and technology buyers such as procurement teams and framework operators.
+</p>
+
+
+      <!--  -->
+      <h2 id="covered">What standards are included</h2>
+      <p>The directory lists all standards that are mandated at a national level as well as some standards that are not mandatory but are widely in use in England. These include: </p>
+      <ul class="nhsuk-list-bullet">
+        <li>all approved national <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">information standards</a>. These are assured by
+          the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">Data Alliance Partnership Board</a> and issued with an Information Standard Notice, which means they are mandatory.
+          </li>
+        <li>APIs published in <a href="https://digital.nhs.uk/developer/api-catalogue">NHS Digital API Catalogue</a></li>
+        <li>record standards published by the <a href="https://theprsb.org/">Professional Records Standards Body</a></li>
+      </ul>
+      <p>It also includes draft APIs and draft standards that are in the process of being assured at the national level.</p>
+
+<p>More standards are likely to be added to the directory in the future. You can find <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">data collections and extractions on NHS Digital’s website</a>.</p>
+
+  <h2 id="covered">Who manages this service</h2>
+  <p>This service is managed by NHS England and Improvement working closely with organisations involved in standards development. You can contact the standards directory team by emailing <a href="mailto:england.interop.standards@nhs.net">england.interop.standards@nhs.net</a>.</p>
+<!--  -->
+
+
+
+            {% include "includes/was-this-page-useful.html" %}
+
+          </div>
+        </div>
+
+        {% endblock %}

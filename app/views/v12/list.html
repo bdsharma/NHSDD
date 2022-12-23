@@ -1,0 +1,128 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v12.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+CKAN - Add standard
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+
+{% endblock %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="dashboard">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Standards</a></li>
+
+    </ol>
+  </div>
+</nav>
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+<!-- {% include "includes/prototype-banner.html" %} -->
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <div style="background-color:#d8dde0; padding:4px; text-align:center">
+      <p>Organisations</p>
+    </div>
+    <br>
+    <div style="background-color:#d8dde0; padding:4px; text-align:center;">
+      <p>Groups</p>
+    </div>
+    <br>
+    <div style="background-color:#d8dde0; padding:4px; text-align:center;">
+      <p>Tags</p>
+    </div>
+    <br>
+    <div style="background-color:#d8dde0; padding:4px; text-align:center;">
+      <p>Formats</p>
+    </div>
+    <br>
+    <div style="background-color:#d8dde0; padding:4px; text-align:center;">
+      <p>Licences</p>
+    </div>
+
+    </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+    <h1>Standards</h1>
+    <div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-one-half">
+
+        <a href="active" class="nhsuk-button">Add data standard</a>
+        </div>
+        <div class="nhsuk-grid-column-one-half">
+          <a href="#" class="nhsuk-button nhsuk-button--secondary">CSV download</a>
+          </div>
+    </div>
+{% include "includes/search-ckan.html" %}
+
+
+<h3>
+  214 standards found
+</h3>
+  {% include "includes/select-updated.html" %}
+
+<hr>
+<p><a href="#">Accessible Information</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+  <hr>
+  <p><a href="#">Systemic Anti-Cancer Therapy Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+    <hr>
+    <p><a href="#">Neonatal Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+<hr>
+<p><a href="#">Accessible Information</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+  <hr>
+  <p><a href="#">Systemic Anti-Cancer Therapy Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+    <hr>
+    <p><a href="#">Neonatal Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+<hr>
+<p><a href="edit">Electronic Yellow Card Reporting</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+  <hr>
+  <p><a href="#">Systemic Anti-Cancer Therapy Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+    <hr>
+    <p><a href="#">Neonatal Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+<hr>
+<p><a href="#">Accessible Information</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+  <hr>
+  <p><a href="#">Systemic Anti-Cancer Therapy Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+
+    <hr>
+    <p><a href="#">Neonatal Data Set</a><br><span class="nhsuk-u-font-size-16 secondary-text">This standard has no description</span></p>
+    <hr>
+<!-- end page grid and column -->
+{% include "includes/pagination.html" %}
+</div>
+  </div>
+
+
+
+
+
+  {% endblock %}

@@ -1,0 +1,165 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// GOV.UK front-end Toolkit
+@import "node_modules/govuk-frontend/govuk/all";
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+
+
+.secondary-text {
+  color: 	#4c6272;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  }
+  dt {
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+  }
+  dd {
+    float: left;
+    width: 75%;
+    padding: 0;
+    margin: 0 0 5px 0;
+  }
+
+  .table-list li {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #bfc1c3;
+  }
+  .table-list li:first-child {
+    border-top: 1px solid #bfc1c3;
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+
+  // Small checkboxes
+
+  .nhsuk-checkboxes--small .nhsuk-checkboxes__item {
+    min-height: 0;
+    margin-bottom: 0;
+    padding-left: 34px;
+    float: left;
+}
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__input {
+    left: -10px;
+    padding: 6px 15px 5px 1px;
+}
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__label::before {
+    top: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__label::after {
+    top: 15px;
+    left: 6px;
+    width: 9px;
+    height: 3.5px;
+    border-width: 0 0 3px 3px;
+}
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__item:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.options-container--hod {
+  max-height: 200px;
+  position: relative;
+  // background-color: #f3f3f3;
+  overflow-y: auto;
+  overflow-x: hidden;
+  // border: 5px solid #dee0e2;
+  padding-left: 10px;
+}
+
+// Taxonomy tags
+.taxonomy-tag {
+  font-size: small;
+  color: #666;
+  padding: .33em .5em;
+  border-radius: .3em;
+  background-color: #f0f4f5;
+  white-space: nowrap;
+}
+.taxonomy-tag.blue {
+  color: #FFFFFF;
+  background-color:#d8dde0;
+}
+
+
+// Phase banner
+
+.nhsuk-phase-banner__text {
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+.nhsuk-phase-banner__content {
+    font-size: 1px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+.nhsuk-phase-banner__content {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.14286;
+    display: table;
+    margin: 0;
+}
+.nhsuk-phase-banner__content__tag {
+    margin-right: 10px;
+    background-color: #d53880;
+    border: none;
+}
+
+.nhsuk-tag {
+    font-size: 14px;
+    line-height: 1;
+}
+.nhsuk-phase-banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b1b4b6;
+}
+
+.nhsuk-phase-banner.homepage{
+    border-bottom: none;
+  }
+  .homepage  .nhsuk-phase-banner__content__tag {
+    margin-right: 10px;
+    background-color: #d53880;
+    border: 1px solid white;
+  }

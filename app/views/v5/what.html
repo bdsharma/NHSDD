@@ -1,0 +1,100 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+ Building for interoperability
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Why standards are important</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+       Why standards are important
+      </h1>
+      <h2>What are data standards and interoperability</h2>
+      <p>Data standards are standardised ways of collecting, formatting and exchanging data that are widely adopted in a sector.</p>
+
+<p>When this happens digital technologies owned by different organisations can see and use one another’s data in real-time. This is known as interoperability.</p>
+
+<p>Interoperability can transform whole industries. For example, we can transfer money quickly from one bank account to another because the banking industry uses universal standards to format and exchange financial information.</p>
+
+<p>In a health context, achieving interoperability could mean hospital staff being able to see and add to someone’s GP or care records instantly instead of relying on emails.</p>
+
+<p>Interoperability is not the same as manually integrating systems that have been built to different specifications. Getting these systems to communicate requires an extra layer of work.
+  The benefit of interoperability is this isn’t needed because all the systems have the same underlying framework.</p>
+
+<h2>Why use standards </h2>
+
+<p>The use of standards is important for the safety of people receiving care. This is because:</p>
+<ul class="nhsuk-list-bullet">
+  <li>it reduces the risk of dangerous errors  - for example, if a staff member writes down the name of someone’s medication without including the correct code it could be misread by a colleague</li>
+  <li>it gives staff instant access to someone’s records rather than needing to wait for emails or faxes - in an emergency situation this could save someone’s life</li>
+</ul>
+<p>There are also major benefits for people who give and receive care.</p>
+
+<h3>Benefits to people who receive care</h3>
+
+<p>Benefits include:</p>
+<ul class="nhsuk-list-bullet">
+  <li>reducing the burden on people needing to share details about their health or treatment every time they receive some form of care. This can be hard for everyone, but especially for people with conditions that affect their memory.</li>
+<li>allowing people to be able to see their own health record, so they have more visibility and ownership of their data</li>
+<li>giving people more effective care by ensuring healthcare professionals make informed decisions based on their full history</li>
+<li>not leaving paper records on trains - security risk</li>
+<li>getting vital info from others care settings to...</li>
+
+</ul>
+
+<h3>Benefits to health and social care professionals</h3>
+
+
+<p>Benefits include:</p>
+<ul class="nhsuk-list-bullet">
+  <li>being able to call up someone’s health record or a snapshot of their record instantly without having to ask anyone to share it </li>
+<li>being able to see richer details about the health and wellbeing of the person they’re caring for to better tailor treatment or services</li>
+<li>less time filling in paperwork</li>
+</ul>
+ <p>The recent pandemic - where we had to quickly move patients to wherever there was space to treat them - showed us how important it is to join up IT systems to make care provision easier. </p>
+
+
+
+
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}

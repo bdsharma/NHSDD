@@ -1,2 +1,23 @@
-# Ignore output of scraper
-data.sqlite
+# named files
+.DS_Store
+.pyre_configuration
+Pipfile
+Pipfile.lock
+
+
+# named directories
+.idea
+__pycache__
+.pyre
+.couscous
+.hypothesis
+
+
+# wildcards
+*.log
+models/*.bin
+models/*.vec
+data/*
+.mypy*
+output/*
+node_modules

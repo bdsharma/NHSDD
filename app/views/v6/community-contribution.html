@@ -1,0 +1,91 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v6.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Join the discussion forum - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Join the discussion forum</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <span class="nhsuk-caption-l">
+        Standards directory
+      </span>
+
+      <h1>Discussion forum</h1>
+
+      <p>The discussion forum is open to anyone with an interest in standards adoption and interoperability in health and social care. </p>
+
+
+
+<p>You can: </p>
+<ul class="nhsuk-list-bullet">
+  <li>read and contribute to discussions, for example around implementing standards or developing local specifications</li>
+  <li>ask the community a question</li>
+</ul>
+<figure class="nhsuk-image">
+  <img class="nhsuk-image__img" src="/images/github-discussions.png" alt="GitHub discussions">
+  <figcaption class="nhsuk-image__caption">
+    GitHub discussion forum
+  </figcaption>
+</figure>
+<a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care/discussions" class="nhsuk-button" target="_blank">Go to the discussion forum on GitHub</a>
+<p>(Opens a new window)</p>
+
+<h2>How the discussion forum works</h2>
+<p>The platform is hosted on GitHub, an open source platform designed for collaboration.</p>
+<p>You will need a <a href="https://github.com/">public GitHub account</a> if you want to comment or start a discussion.</p>
+<p>You do not need to create a GitHub account to browse.</p>
+
+<h2>Support</h2>
+<p>The standards directory team moderate the discussions forum. You can contact them by emailing <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>.</p>
+
+
+<br>
+
+{% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}

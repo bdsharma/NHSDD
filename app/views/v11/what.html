@@ -1,0 +1,101 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v11.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+About this service - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">About this service</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      About standards
+    </h1>
+
+</div>
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- <h2 id="about">About this service</h2> -->
+    <h2 id="about">What we mean by standards</h2>
+    <p>This service contains data standards, which we group into 4 categories:</p>
+<ul class="nhsuk-list-bullet">
+<li><strong>electronic records</strong> define what information to collect and how to format it, for example when registering a new patient
+<br><br><a href="#">Browse electronic records</a>.</li>
+<br>
+<li><strong>data dictionaries</strong> define the format of data items so they can be consistently represented, for example names of medications. Reference sets and controlled lists and also included.
+<br><br><a href="#">Browse data dictionaries</a>.</li>
+<br>
+<li><strong>technical specifications</strong> specify how to make information available technically including how the data is structured and transported
+<br><br><a href="#">Browse technical specifications</a>.</li>
+<br>
+<li><strong>data handling</strong> are legal or best practice guidelines on how information should be handled
+<br><br><a href="#">Browse data handling</a>.</li>
+</ul>
+<p>Not every standard that exists is listed in this service. You can <a href="about">find out which standards are included</a>.</p>
+<!-- <p><a href="#top">Back to the top</a></p> -->
+
+<!--  -->
+    <h2 id="who">Benefits of using standards</h2>
+    <p>There are many benefits to using data standards including:</p>
+<ul class="nhsuk-list-bullet">
+  <li>it’s more efficient to reuse existing approaches to recording or exchanging data than creating new ones</li>
+  <li>it promotes quality by ensuring all care settings are aligned to standards that have been approved by qualified bodies</li>
+  <li>it makes it easier to analyse data at the national level and see trends or problems if the data has all been standardised</li>
+<li>it is essential to achieving interoperability in England which would allow IT systems across the country to share data - an example of this would be hospitals updating GP records directly using their own systems instead of sending emails or faxes</li>
+  </ul>
+
+
+
+      <!--  -->
+      <h2 id="covered">Report a gap in standards</h2>
+      <p>Work is underway to publish a process for people developing new data standards.</p>
+
+      <p>In the meantime, please notify us of plans to create new standards by emailing <a href="mailto:england.interop.standards@nhs.net">england.interop.standards@nhs.net</a>. Local standards that apply at the national level may be uplifted for national use.</p>
+
+
+
+
+
+            {% include "includes/was-this-page-useful.html" %}
+
+          </div>
+        </div>
+
+        {% endblock %}

@@ -1,0 +1,223 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v10.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Mental health inpatient discharge - Standards directory
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v10/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v10/browse-all">Published standards</a></li>
+      <li class="nhsuk-breadcrumb__item">SCCI2075: Assessment, Discharge and Withdrawal Notices</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  {% include "includes/notification-deprecated-soon.html" %}
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+
+    <h1>
+      SCCI2075: Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services
+    </h1>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <p class="nhsuk-u-font-size-16">Discharge hospital patients with social care needs into social services.</p>
+
+
+    <h2 class="nhsuk-heading-m">About this standard</h2>
+    <table class="nhsuk-table ">
+      <tbody class="nhsuk-table__body ">
+
+
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16">NHS Digital
+          </td>
+        </tr>
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>
+    <!--  -->
+    <br><br>
+    {% include "includes/details-status.html" %}
+<!--  -->
+</td>
+</tr>
+
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Type</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    Record standards
+<!--  -->
+<br><br>
+{% include "includes/details-type.html" %}
+<!--  -->
+</td>
+</tr>
+
+<!-- <tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+
+    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci2075-assessment-discharge-and-withdrawal-notices-between-hospitals-and-social-services" target="_blank">View documentation for this standard</a>
+      <br>(opens in new window)</p>
+    </td>
+  </tr> -->
+  <tr role="row" class="nhsuk-table__row">
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact details</td>
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a></td>
+  </tr>
+</tbody>
+</table>
+
+<!--  -->
+<h2 class="nhsuk-heading-m">Link to standard</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci2075-assessment-discharge-and-withdrawal-notices-between-hospitals-and-social-services" target="_blank">View documentation for this standard (opens in new window)</a>
+          </p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+<!--  -->
+
+<h2 class="nhsuk-heading-m">Topics and care settings</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>Continuity of care (TOC)</li>
+      </ul></td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care setting</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+          <li>Hospital</li>
+          <li>Social care</li>
+        </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 class="nhsuk-heading-m">Dependencies and related standards</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        This specification should be read in conjunction with the following standards: <br><br>
+        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+          <li>ISB 0149 Amd 136/201012 NHS Number Standard Specification</li>
+          <li> ISB 0149-0213 NHS Number for Secondary Care</li>
+          <li> ISB 150114 Common User Interface - Time Display</li>
+          <li>ISB 150315 Common User Interface - Date Display</li>
+        </ul>
+      </td>
+
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related standards</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        None specified
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!--  -->
+<h2 class="nhsuk-heading-m">Assurance and endorsements</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Reference code for legally mandated standards</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">SCCI2075
+      </td>
+      </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Quality assurance</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard has been approved by the
+        Standardisation Committee for Care Information and published as an information standard notice (ISN).
+
+
+      </td>
+      </tr>
+      <tr role="row" class="nhsuk-table__row">
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsements</td>
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+          The PRSB will be reviewing and adapting this standard as part of the social care pathfinders project and the standard will be submitted for endorsement during this process.
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% include "includes/was-this-page-useful.html" %}
+
+
+
+<!--  -->
+
+
+
+<!--  -->
+
+</div>
+<!--  -->
+<div class="nhsuk-grid-column-one-third">
+  {% include "includes/subscribe-standard.html" %}
+
+</div>
+<!--  -->
+</div>
+
+
+
+
+
+{% endblock %}

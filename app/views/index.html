@@ -1,0 +1,653 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Prototypes for joining up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        Prototypes for joining up IT systems in health and social care
+      </h1>
+      <p class="nhsuk-caption-l">This is a collection of prototypes for the Standards Directory.</p>
+      <br>
+      <!-- Round 13 -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 13 - User research November 2022 </span>
+      <span class="nhsuk-caption-m">Focus: Applicability of standards</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v12/login"></a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li><a href="v13/guidance">Introduction page</a></li>
+            <li><a href="v13/question-setting">Question page</a></li>
+          </ul>
+
+
+          <!--  -->
+        </div>
+      </details>
+      <p><a href="v13/guidance">Link to round 13 prototype</a></p>
+      <hr>
+      <!-- Round 12 -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 12 - User research 12 October 2022 </span>
+      <span class="nhsuk-caption-m">Focus: CKAN redesign</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v12/login"></a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li><a href="v12/login">Login</a></li>
+            <li><a href="v12/dashboard">Dashboard</a></li>
+            <li><a href="v12/list">View all standards</a></li>
+            <li><a href="v12/active">Add new standard</a></li>
+            <li><a href="v12/summary">New standard summary</a></li>
+            <li><a href="v12/edit">Edit standard</a></li>
+            <li><a href="v12/summary-edit">Edited standard summary</a></li>
+          </ul>
+
+
+          <!--  -->
+        </div>
+      </details>
+      <p><a href="v12/login">Link to round 12 prototype</a></p>
+      <hr>
+      <!-- Round 11 -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 11 - User research 13 September 2022 </span>
+      <span class="nhsuk-caption-m">Focus: subscriptions and notifications of standard changes</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/home">Homepage</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated service name to "Find standards to record, handle and exchange data in England"</li>
+            <li>tagline updated to "Use this directory to find nationally recognised standards for use in health and adult social care."</li>
+            <li>updated top nav to "Published standards", "Future standards", "About standards" and "Help and resources"</li>
+            <li>change standard types to Data dictionaries, Electronic records, Technical specifications, Data handling</li>
+          </ul>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/browse-all">Browse all standards</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>reinstated status filter and changed 'draft' to 'in development (APIs only)'</li>
+            <li>changed sort by filter to 'Added (newest/oldest)' instead of 'Updated (newest/oldest)'</li>
+            <li>removed tags from standard type and placed it on status</li>
+            <li>changed 'Mandatory in England' tickbox to 'Requirement in England'</li>
+            <li>changed wording for each listing result from 'Mandatory in England' to 'Date added: [date]'</li>
+          </ul>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/active">Standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated content on text reveal to 'Show definitions of statuses/type' </li>
+            <li>changed order of quality assurance with reference code; small content updates on reference code</li>
+            <li>changed 'Page last reviewed' to 'Page last updated' and removed 'Next review date'</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Error pages</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li><a href="v11/500">Broken link (500)</a> </li>
+            <li><a href="v11/error">Application error </a></li>
+          </ul>
+          <!--  -->
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/community-roadmap">Roadmap</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>added multiple standard types</li>
+            <li>suggested stages: proposed, draft in progress, awaiting approval, cancelled and on hold</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/enter-email">Subscription journey</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li><a href="v11/enter-email">enter email</a></li>
+            <li><a href="v11/check-email">check email</a></li>
+            <li><a href="v11/confirmation">confirmation that user has subscribed to a standard</a></li>
+            <li><a href="v11/confirmation-unsubscribed">confirmation that a user has unsubcribed</a></li>
+            <li><a href="v11/subscribe-general-updates">subscription to standards based on care settings and topics</a></li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/deprecated-soon">Soon to be deprecated standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>notification banner to alert users that an active standard may be deprecated</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/deprecated">Deprecated standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>added additional metadata - dates and reasons for deprecation</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v11/retired">Retired standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>added additional metadata - dates and reasons for retirement</li>
+          </ul>
+          <!--  -->
+        </div>
+      </details>
+      <p><a href="v11/home">Link to round 11 prototype</a></p>
+      <hr>
+      <!--  -->
+      <!-- Round 10 -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 10 - User research 16 June 2022</span>
+      <span class="nhsuk-caption-m">Focus: subscriptions and notifications of standard changes</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="v10/community-roadmap">Roadmap</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated roadmap populated with real content</li>
+            <li>suggested stages: proposed, draft ready and awaiting approval</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v10/enter-email">Subscription journey</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li><a href="v10/enter-email">enter email</a></li>
+            <li><a href="v10/check-email">check email</a></li>
+            <li><a href="v10/confirmation">confirmation that user has subscribed to a standard</a></li>
+            <li><a href="v10/confirmation-unsubscribed">confirmation that a user has unsubcribed</a></li>
+            <li><a href="v10/subscribe-general-updates">subscription to standards based on care settings and topics</a></li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v10/deprecated-soon">Soon to be deprecated standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>notification banner to alert users that an active standard may be deprecated</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v10/deprecated">Deprecated standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>added additional metadata - dates and reasons for deprecation</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v10/retired">Retired standard listing</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>added additional metadata - dates and reasons for retirement</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v10/home">Link to round 10 prototype</a></p>
+      <hr>
+      <!--  -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 9 - User research 18th - 25th May 2022</span>
+      <span class="nhsuk-caption-m">Focus: search/browse for standards using real data in the build environment </span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold"><a href="https://standards-registry-demo.herokuapp.com">Homepage</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Changed tagline to: Use this directory to find nationally recognised standards for use in technology in England.</li>
+<li>Updated top navigation to Published standards, Future standards, Guidance and Community and links</li>
+<li>Updated content blocks for Future standards, Guidance and Community and links</li>
+<li>Removed link to browse more ‘Latest standards’ keeping top three links</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="https://standards-registry-demo.herokuapp.com/standards">Browse</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Side filters revert to Details component now displaying [number of filters] selected</li>
+  <li>Care setting and Topic are filters; Type now rendered as dropdown</li>
+  <li>Filtering developed to produce fewer results (AND, not OR)</li>
+  <li>New filter labels (grey tags) summarise what’s being selected (and are editable)</li>
+  <li>Reworded ‘nationally mandated’ tickbox to “Mandatory in England”</li>
+
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="https://standards-registry-demo.herokuapp.com/what-information-standards-are">Guidance</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updated guidance content </li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="https://standards-registry-demo.herokuapp.com/community">Community and links</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updated community content to include <br>
+- Standard development bodies <br>
+- Discussion forums<br>
+- Technology regulations<br>
+- Platforms for buying and selling IT<br>
+- Design kits and case studies<br>
+</li>
+          </ul>
+        </div>
+      </details>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 8 - User research 11th - 15th April 2022</span>
+      <span class="nhsuk-caption-m">Focus: search/browse for standards using real data in the build environment</span><br>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+
+          <span class="nhsuk-u-font-weight-bold">Homepage</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Changed service name to: Find standards for data and interoperability in health and social care
+<br>Tagline: Use this directory to find nationally recognised information standards for interoperable technology in health and adult social care.</li>
+<li>Updated text from ‘New standards and APIs’ to ‘Latest standards’</li>
+<li>Reference to ‘Roadmap’ changed to ‘Upcoming standards’ (to help non-technical users less familiar with the roadmap term)</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browse</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Sort by filter now has these options:<br>
+Updated (newest)<br>
+Updated (oldest)<br>
+A-Z <br>
+Z-A <br></li>
+<li>Side filters with working ‘Open all’ and ‘Close all’ filters</li>
+<li>Working ‘nationally mandated’ tickbox (nationally mandated are standards with reference code)</li>
+
+
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Standard listing</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Provided full explanation on all status definitions </li>
+<li>Provided full explanation on all standard type definitions </li>
+<li>Updated Assurance and endorsements section, changed label from ‘Legally mandated’ to ‘Reference code for legally mandated standards’</li>
+<li>Updated label ‘Quality assured by’ to ‘Quality assurance’  </li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="https://standards-registry-demo.herokuapp.com/">Link to live code base</a></p>
+      <hr>
+<!-- Round 7 -->
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 7 - User research 14th - 25th March 2022</span>
+      <span class="nhsuk-caption-m">Focus: roadmap and search/browse functionality</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <span class="nhsuk-u-font-weight-bold"><a href="v7/home">Homepage</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>new homepage layout to browse by care setting, topic and standard type with sample settings</li>
+            <li>roadmap, guidance and community links situated on bottom of the homepage</li>
+            <li>added top navigation menu</li>
+            <li>new section promoting latest standards and APIs</li>
+            <li>new footer links</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v7/browse-all">Browse all standards</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated filters using NHS expander component</li>
+            <li>removed status filter</li>
+            <li>added new sort by filters to sort by newly created standards and nationally mandated ones</li>
+            <li>moved search bar out of header to be closer to filters</li>
+            <li>used tags for standard types and removed them from status</li>
+            <li>changed 'last updated' to 'date added'</li>
+            <li>focused directory on active standards</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v7/standard-mental-health">Standard listing page</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>changed 'business use' to 'topic'</li>
+            <li>moved 'dependencies' to sit before 'related standards'</li>
+            <li>added new information around legally mandated standards and further information around assurance</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v7/community-roadmap">Roadmap</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>focused roadmap around upcoming standards</li>
+            <li>added filter to sort roadmap by care settings</li>
+            <li>removed tabs and replaced with table and sortable columns</li>
+            <li>table information consists of standard name, type, status, dates and standard owner details</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v7/what">Guidance</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>use content list component to break down guidance into separate pages</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v7/home">Link to round 7 prototype</a></p>
+
+
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 6 - User research 7th - 18th February 2022</span>
+      <span class="nhsuk-caption-m">Focus: maintenance and contribution (second alpha)</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <span class="nhsuk-u-font-weight-bold"><a href="v6/home">Homepage</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated long service name to 'Find standard formats to exchange health information digitally'</li>
+            <li>changed long service name to 'Find standards and APIs to support data sharing in health and social care'</li>
+            <li>re-ordered sections to 'Standards directory and roadmap', 'Community discussions and backlog' and 'Guidance'</li>
+            <li>updated guidance in 'Information standards in health' and 'About this service'</li>
+            <li>replaced cards on contribution guidance and community platform with community discussions and backlog</li>
+            <!-- <li>changed longer service name from 'Join up IT systems in health and social care' to ...</li> -->
+
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v6/browse-all">Browse all standards</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>small content amends on 'status' filter</li>
+            <li>included pagination component</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v6/standard-mental-health">Standard listing page</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>removed duplicated status label and updated caption to 'Record standard'</li>
+            <li>added links to roadmap and get updates for standard</li>
+            <li>set up text reveals to explain what 'assured' and 'status' mean for users</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v6/community-roadmap">Roadmap</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>updated roadmap with tabs and filters to help scale and navigate growing list of roadmap items</li>
+            <li>revised roadmap column headings</li>
+            <li>updated roadmap content, making listing and documentation links more clear</li>
+            <li>moved 'subscribe to roadmap updates' and 'feedback' links to right hand column</li>
+            <li>mocked up filterable columns</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care">Standards community platform for health and social care
+      </a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Moved community platform over to NHSx GitHub account</li>
+            <li>Updated community backlog columns and labels</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v6/home">Link to round 6 prototype</a></p>
+      <p><a href="v6/search">Link to search engine results page</a></p>
+
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 5 - User research 6th - 10th December 2021</span>
+      <span class="nhsuk-caption-m">Focus: maintenance and contribution (second alpha)</span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <span class="nhsuk-u-font-weight-bold"><a href="v5/home">Homepage</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updated sections to 'Standards directory and roadmap', 'Guidance on using standards' and 'Community and contributions'</li>
+            <li>Reduced the number of cards under each section to two</li>
+            <li>Removed 'Browse by topic', 'Common use cases', 'Case studies', 'Share standard or API' and 'Identify a gap'</li>
+            <li>Added two new cards on roadmap and contribution guidance</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v5/browse-all">Browse all standards</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Replaced 'Browse directory' with 'Browse all standards'</li>
+            <li>Removed categories: 'Content standards', 'Technical standards' and 'Services'</li>
+            <li>Updated filters to 'Business use', 'Care settings', 'Standard type' and 'Status'</li>
+            <li>Updated status labels to include Deprecated </li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v5/standard-mental-health">Standard listing page</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Changed the caption from 'Content format' to 'Information standard listing'</li>
+            <li>Grouped metadata into sections: 'About the standard', 'Business and care setting usage', 'Relationships to other standards', 'Assurance and endorsements'</li>
+            <li>Moved link to full standard documentation and standard owner's contact details further up on the page into 'About this standard'</li>
+            <li>Removed 'Previous versions', use cases, case studies</li>
+            <li>Renamed 'Technical specifications' into 'Related standards'</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="v5/community-roadmap">Roadmap</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Set up new roadmap page outlining standards that are commissioned, drafted, newly active, to be deprecated, deprecated and retired</li>
+            <li>Added sub-footer to provide feedback to directory team and/or community platform</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold"><a href="https://github.com/Marvell-Consulting/standards-community-platform-for-health-and-social-care">Standards community platform for health and social care
+</a></span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Set up  a new community platform using GitHub, an open source collaboration tool</li>
+            <li>Created an intro page explaining how the platform works and main contribution areas of the platform</li>
+            <li>Created 4 templates to help raise issues around proposals for new standards, identifying gaps in existing standards, suggesting improvements and reporting problems with the directory</li>
+            <li>Customised labels to help with tagging and filtering contributions</li>
+            <li>Set up a discussions forum to help provide guidance and support</li>
+            <li>Set up a standards community development backlog to manage contributions to standards development</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v5/home">Link to round 5 prototype</a></p>
+
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 4 - Final iteration for initial alpha</span>
+      <span class="nhsuk-caption-m"></span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <span class="nhsuk-u-font-weight-bold">Homepage</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Reverting to 'join up IT systems...' heading</li>
+            <li>Changed 'Browse by use case' to 'browse by topic'</li>
+            <li>Updated section descriptions</li>
+            <li>Reduced guidance to a single section</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Guidance</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updated guidance for Building for interoperability</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browsing standards</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Browse standards lists now have page descriptions below the header</li>
+            <li>Removed 'security standards' section as that is not currently a priority</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Standards pages</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>
+              Standards pages restructured
+              <ul class="nhs-list nhs-list-bullet">
+                <li>The link to the standard is given its own section</li>
+                <li>Dependencies are grouped by 'required' and 'recommended', rather than standard type</li>
+                <li>Feedback, notifications and page update info moved to right hand column for more prominence</li>
+                <li>Now ask for 'suggestions for improvement' for both 'yes' and 'no' answers to feedback question</li>
+                <li>'ITK3 Mental health eDischarge' renamed Mental health inpatient discharge - FHIR</li>
+                <li>Added improved reasoning for compliance level</li>
+              </ul>
+            </li>
+            <li>Updated the techinical specification to match new content standard format</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">General updates</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updated heading and labelling on search results page</li>
+            <li>Added searchbox to header throughout service</li>
+        </div>
+      </details>
+      <p><a href="v4/home">Link to round 4 prototype</a></p>
+
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 3 - User research 26th to 27th April 2021</span>
+      <span class="nhsuk-caption-m"></span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Updating the hopepage header content</li>
+            <li>Changing the 'Capabilities' filter label to 'Topics'</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v3/home">Link to round 3 prototype</a></p>
+
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 2 - User research 22nd to 23rd April 2021</span>
+      <span class="nhsuk-caption-m"></span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Changes include:</p>
+          <span class="nhsuk-u-font-weight-bold">Homepage</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>It’s now called ‘NHS Standards directory’ rather than ‘Open toolkit’</li>
+            <li>We’ve added some examples for the search box</li>
+            <li>If you add a search term and hit submit, you’ll go to a very basic page of search results with some filters</li>
+            <li>The ‘Tools’ section is now called ‘Directory’</li>
+            <li>We’ve swapped the position of the Guidance and Directory links, so Directory now comes first - we think the links to the tools will be by far the more used section for most users, so we want to avoid frustrating them by forcing them to scroll down every time. But having the Guidance on the second row hopefully gives it enough prominence that users looking for it will be able to see it.</li>
+            <li>Some of the labels of the different sections have been tweaked</li>
+            <li>The ‘Contribute’ section how has 4 sections, rather than 2</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browse directory</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve combined the ‘Information standards’ and ‘Terminology standards’ sections into a single group called ‘Content Standards’</li>
+            <li>We’ve added a section for ‘Security standards’ - but this is a placeholder and doesn’t link through to anything – it could be worth probing what users think might be in here</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Content standards </span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve added some new filters for </li>
+            <li>‘Compliance’ – I.e. is the standard ‘required’ ‘recommended’ or ‘optional’</li>
+            <li>’Status’ - I.e. what is the status of the standard</li>
+            <li>These are both highlighted in the list of standards</li>
+            <li>We will also add in the date the standard was last updated</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Standard page – mental health inpatient discharge</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve rearranged the metadata a bit</li>
+            <li>The link to the standard is now nearer the top of the page under the description</li>
+            <li>We’ve metadata for ‘compliance’ along with an explanation of what it means e.g. ‘Recommended for use on relevant services’ – it would be good to probe what they think of the description, and what would they think it should say if it was a mandated standard</li>
+            <li>We’ve added related use cases and case studies near the bottom</li>
+            <li>Below the ‘Previous versions’, </li>
+            <li>We’ve added a link to ‘Get email updates for this standard’ where the user can provide an email address</li>
+            <li>We’ve added a page last update section</li>
+            <li>We’ve added a was this page useful? link to help gather feedback</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browse technical standards</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve added an “API status’ filter with more simplified options, rather than ‘Alpha beta etc’– it would be good to probe if this is more understandable or it needs more detail</li>
+            <li>We play back the API status on the list</li>
+            <li>We play back the date last updated on the list</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browse by use case</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Name has been changed from ‘Browse by product type’</li>
+            <li>The list of care settings has been reduced a bit by making some of the options (Hospital, Social Care and Urgent and emergency care) conditionally revealing</li>
+            <li>The content on the results page has been rearranged a bit</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Common use cases</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>No major changes, we’ve added ‘page last updated’ and ‘Was this page useful</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Guidance section:</span>
+          <span class="nhsuk-u-font-weight-bold">What is interop and get started </span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>Both have new guidance</li>
+            <li>Both have ‘page last updated’ and ‘Was this page useful</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Browse case studies</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve added a few more examples, although they all link to the Bradford example</li>
+            <li>We’ve updated the case study names to be more descriptive</li>
+            <li>We’ve added filters for ‘Region’ and “Technology</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Bradford case study</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We’ve added a link to download the case study</li>
+            <li>We’ve added ‘page last updated’ and ‘Was this page useful</li>
+          </ul>
+          <span class="nhsuk-u-font-weight-bold">Contribute</span>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>We have 4 sections now, but none link through</li>
+          </ul>
+
+
+
+        </div>
+      </details>
+      <p><a href="v2/home">Link to round 2 prototype</a></p>
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Round 1 - User research 14th to 16th April 2021</span>
+      <span class="nhsuk-caption-m"></span>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Initial prototype developed to explore:</p>
+          <ul class="nhs-list nhs-list-bullet">
+            <li>High level guidance sections</li>
+            <li>Case studies content</li>
+            <li>Navigation based on browsing by tools (Standards, APIs and services)</li>
+            <li>An example standards page for an infomration standard (mental health inpatient dishcarge standard)</li>
+            <li>An example standards page for a terminology standard (SNOMED CT)</li>
+            <li>An example standards page for a technology standard (Transfer of Care mental health dishcarge - FHIR API  )</li>
+            <li>Navigation based on product type and care setting</li>
+            <li>Navigation based on service use cases</li>
+            <li>An example use case (Discharging someone from mental health services to another care setting)</li>
+            <li>What a use case could look like and cross link to all related standards</li>
+            <li>Page and information formats for information and terminology standards</li>
+          </ul>
+        </div>
+      </details>
+      <p><a href="v1/home">Link to round 1 prototype</a></p>
+      <hr>
+
+      <span class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Supporting materials</span>
+      <span class="nhsuk-caption-m"></span>
+      <br>
+      <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold">Interoperability standards service map</span>
+      <p>A service map showing how the standards directory fits in to the broader interoperablitiy standards landsacpe
+        <br>
+        <a href="/images/nhs-interop-service-map.pdf">View the interoperability standards service map</a>
+      </p>
+      <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold">User ecosystem map</span>
+      <p>An ecosystem map demonstrating all user groups related to interoperability standards and how the groups relate to each other
+        <br>
+        <a href="/images/nhs-interop-ecosystem-map.pdf">View the user ecosystem map</a>
+      </p>
+    </div>
+  </div>
+  {% endblock %}

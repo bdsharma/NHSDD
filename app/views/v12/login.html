@@ -1,0 +1,88 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v12-home.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+CKAN - Add standard
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v11/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v11/browse-all">Published standards</a></li>
+      <li class="nhsuk-breadcrumb__item">SCCI2075: Assessment, Discharge and Withdrawal Notices</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+<!-- {% include "includes/prototype-banner.html" %} -->
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-half">
+    <h2>
+      Login
+    </h2>
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example">
+    Enter email address
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+    Enter password
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text">
+</div>
+
+<a href="dashboard" class="nhsuk-button">Continue</a>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <p><a href="#">Forgot password</a></p>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <p><a href="#">Create account</a></p>
+      </div>
+    </div>
+
+  </div>
+
+<div class="nhsuk-grid-column-one-half" style="padding-left:40px;">
+  <h2>
+    About
+  </h2>
+  <p>Welcome to the NHS Data Standards Directory management tool. This tool is for managing content in the directory.</p>
+  <p><a href="https://data.standards.nhs.uk/">Go the NHS Data Standards Directory.</a></p>
+<!-- end page grid and column -->
+</div>
+
+  </div>
+
+
+
+
+
+  {% endblock %}
