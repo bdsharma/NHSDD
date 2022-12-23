@@ -1,0 +1,231 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v10.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Mental health inpatient discharge - Standards directory
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v10/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v10/browse-all">Published standards</a></li>
+      <li class="nhsuk-breadcrumb__item">Read Clinical Terms Version 3</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+
+    <h1>
+      Read Clinical Terms Version 3
+    </h1>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <p class="nhsuk-u-font-size-16">Record patient findings and procedures in IT systems using a standard vocabulary across primary and secondary health and social care.</p>
+
+
+    <h2 class="nhsuk-heading-m">About this standard</h2>
+    <table class="nhsuk-table ">
+      <tbody class="nhsuk-table__body ">
+
+
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16">NHS Digital
+          </td>
+        </tr>
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    <strong class="nhsuk-tag nhsuk-tag--red">Retired</strong>
+    <!--  -->
+    <br><br>
+    {% include "includes/details-status.html" %}
+<!--  -->
+</td>
+</tr>
+
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Type</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    Data definitions and terminologies
+<!--  -->
+<br><br>
+{% include "includes/details-type.html" %}
+<!--  -->
+</td>
+</tr>
+<!--  -->
+
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date deprecated</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    1 September 2014
+    </td>
+    </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Reason for deprecation</td>
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+      Read Codes are a coded thesaurus of clinical terms. Read Codes have two versions: Version 2 (v2) and version 3 (CTV3 or v3), which are the basic means by which clinicians record patient findings and procedures in health and social care IT systems across primary and secondary care.
+<br><br>
+Read v2 was deprecated as an information standard by the Information Standards Board (ISB) in December 2010 but no formal Notice was issued pending the determination of a withdrawal schedule; following approval by the Standardisation Committee for Care Information (SCCI), a Notice confirming the schedule was published in December 2014. Read v2 ceased to be maintained following the final release in April 2016 and is due to be formally retired in April 2020.
+<br><br>
+Read v3 (CTV3) was deprecated as an information standard by SCCI and a Notice confirming the deprecation was published in December 2014. Read v3 (CTV3) ceased to be maintained following the final release in April 2018 and is due to be formally retired in April 2020.
+      </td>
+    </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date retired</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+1 April 2020
+        </td>
+      </tr>
+
+  <tr role="row" class="nhsuk-table__row">
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact details</td>
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:dapb@nhs.uk">dapb@nhs.uk</a></td>
+  </tr>
+</tbody>
+</table>
+<!--  -->
+<h2 class="nhsuk-heading-m">Link to standard</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="#" target="_blank">View deprecation notice on the National Archives website (opens in new window)</a>
+          </p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!--  -->
+
+<h2 class="nhsuk-heading-m">Topics and care settings</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>Continuity of care (TOC)</li>
+      </ul></td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care setting</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+          <li>Hospital</li>
+          <li>Patient</li>
+        </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 class="nhsuk-heading-m">Dependencies and related standards </h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        None specified
+      </td>
+
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related standards</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        This standard has been replaced by the Dictionary of Medicines and Devices and SNOMED CT
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!--  -->
+<h2 class="nhsuk-heading-m">Assurance and endorsements</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Reference code for legally mandated standards</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">ISB1552
+      </td>
+      </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Quality assurance</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard has been approved by the
+        Standardisation Committee for Care Information and published as an information standard notice (ISN).
+      </td>
+      </tr>
+
+      <tr role="row" class="nhsuk-table__row">
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsements</td>
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+          None specified
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% include "includes/was-this-page-useful.html" %}
+
+
+
+<!--  -->
+
+
+
+<!--  -->
+
+</div>
+<!--  -->
+<div class="nhsuk-grid-column-one-third">
+  {% include "includes/subscribe-standard.html" %}
+
+</div>
+<!--  -->
+</div>
+
+
+
+
+
+{% endblock %}

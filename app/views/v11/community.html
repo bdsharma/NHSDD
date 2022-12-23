@@ -1,0 +1,100 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v11.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Community - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+<div class="nhsuk-width-container">
+<ol class="nhsuk-breadcrumb__list">
+<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v11/home">Home</a></li>
+<li class="nhsuk-breadcrumb__item">Help and resources</li>
+</ol>
+</div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      Help and resources
+    </h1>
+    <h2>Standards Directory team</h2>
+
+    <p>You can contact the team who manage the Standards Directory by emailing <a href="mailto:england.interop.standards@nhs.net">england.interop.standards@nhs.net</a>.</p>
+
+<h2>Standard development bodies</h2>
+    <p><a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">The Data Alliance Partnership Board</a> approves information standards, data collections and extractions for health and adult social care in England.</p>
+      <p><a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service (GDS)</a> owns the <a href="https://www.api.gov.uk/#uk-public-sector-apis">UK government’s API Catalogue</a> which lists public sector APIs. They also oversee the <a href="https://www.gov.uk/government/groups/data-standards-authority">Data Standards Authority</a> which sets standards for data-sharing in government.</p>
+<p><a href="https://www.hl7.org.uk/">HL7 UK</a> develops standards for exchanging electronic health information in the UK.</p>
+<p><a href="https://digital.nhs.uk/">NHS Digital</a> owns the <a href="https://digital.nhs.uk/developer/api-catalogue">NHS' API Catalogue</a> which lists APIs for use in the NHS. New APIs can be voted on in their <a href="https://nhs-digital-api-management.featureupvote.com/">product backlog</a>.</p>
+<p><a href="https://theprsb.org/">The Professional Record Standards Body</a> develops standards for patient and care records. </p>
+
+<h2>Discussion forums</h2>
+<p><a href="https://future.nhs.uk/">FutureNHS</a> is a platform for health and social care professionals to connect.</p>
+
+<p>INTEROPen is a place to discuss standards development and usage in health and social care. Their <a href="https://interopen.ryver.com/application/login">discussion forum</a> is hosted on Ryvver - email <a href="mailto:membership@interopen.org">membership@interopen.org</a> to join.</p>
+
+<p><a href="https://digitalhealthnetworks.net/">Digital health networks</a> are where health and social care professionals can support the digital agenda through discussions and events.</p>
+
+<h2>Technology regulations</h2>
+<p>The <a href="https://www.gov.uk/service-manual/service-standard">GDS Service Standard</a> and <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard">NHS Service Standard</a> are standards for designing and building online services. <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard-points/17-make-your-service-interoperable">Point 17 of the NHS Service Standard</a> states that technology must incorporate standards that support interoperability.</p>
+
+<p>The <a href="https://www.gov.uk/guidance/the-technology-code-of-practice">Technology Code of Practice</a> is set of criteria to help government build or buy technology.</p>
+
+<p>The <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines</a> are a requirement for all public sector websites and apps.</p>
+
+<h2>Platforms for buying and selling IT</h2>
+<p><a href="https://gpitbjss.atlassian.net/wiki/spaces/GPITF/overview?homepageId=1391134009">GP IT Futures Capabilities & Standards</a> is a commercial framework for primary care technology.</p>
+
+<p><a href="https://www.england.nhs.uk/hssf/">Health Systems Support Framework</a> is a commercial framework for non-clinical solutions related to population health management such as advanced analytics and digital infrastructure.</p>
+
+<p><a href="https://www.digitalsocialcare.co.uk/social-care-technology/digital-social-care-records-dynamic-purchasing-system/">The Digital Social Care Records Dynamic Purchasing System</a> is a commercial framework for solutions that digitise social care records.</p>
+
+<h2>Design kits and case studies</h2>
+<p><a href="https://service-manual.nhs.uk/design-system">The NHS Design System</a> has design patterns and style guides for use in NHS digital services.</p>
+<p><a href="https://design-system.service.gov.uk/">The GOV.UK Design System</a> has design patterns and style guides for use in all public sector digital services.</p>
+<p><a href="https://www.nhsx.nhs.uk/key-tools-and-info/digital-playbooks/">NHS digital playbooks</a> show examples of how care pathways have been improved with technology.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  {% include "includes/was-this-page-useful.html" %}
+
+
+
+  {% endblock %}

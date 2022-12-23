@@ -1,0 +1,163 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v12.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+CKAN - Add standard
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+
+{% endblock %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v12/dashboard">Home</a></li>
+
+      <li class="nhsuk-breadcrumb__item">Dashboard</li>
+    </ol>
+  </div>
+</nav>
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+<!-- {% include "includes/prototype-banner.html" %} -->
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full" style="background-color:white; padding:20px; border-bottom:4px solid #aeb7bd;">
+
+        <h1>Dashboard</h1>
+        <!--TABBED CONTENT  -->
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Data standards
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#commissioned">
+                News feed
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#drafted">
+                My data standards
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#new-active">
+                My organisations
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#to-deprecate">
+                My groups
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#deprecated">
+                My profile settings
+              </a>
+            </li>
+
+          </ul>
+          <div class="govuk-tabs__panel" id="commissioned">
+            <h2 class="govuk-heading-l">News feed</h2>
+            <p>Activity from items that I'm following.</p>
+            <p>Ngozi Iloka created <a href="#">Cardiovascular Data Set</a> <br>
+            <span class="nhsuk-u-font-size-16 secondary-text">2 days ago</span></p>
+
+            <p>Elzie Chan-Englander created <a href="#">Medicine and Allergy/Intolerance Data Transfer</a> as a future standard, <br>
+            <span class="nhsuk-u-font-size-16 secondary-text">5 days ago</span></p>
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="drafted">
+            <h2 class="govuk-heading-l">My data standards</h2>
+            <p>View all data standards added by you.</p>
+<a href="active" class="nhsuk-button">Add data standard</a>
+
+<p><strong class="nhsuk-tag nhsuk-tag--grey">
+  PRIVATE
+</strong> <a href="#">Accessible Information</a></p>
+
+  <hr>
+  <p><strong class="nhsuk-tag nhsuk-tag--grey">
+    PRIVATE
+  </strong> <a href="#">Systemic Anti-Cancer Therapy Data Set</a></p>
+
+    <hr>
+    <p><strong class="nhsuk-tag nhsuk-tag--grey">
+      PRIVATE
+    </strong> <a href="#">Neonatal Data Set</a></p>
+    <hr>
+
+    <p><strong class="nhsuk-tag nhsuk-tag--grey">
+      PRIVATE
+    </strong> <a href="#">Healthcare Resource Group</a></p>
+
+      <hr>
+      <p> <a href="#">eDischarge summary</a></p>
+
+        <hr>
+        <p><a href="#">Mental Health Services Data Set</a></p>
+
+
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="new-active">
+            <h2 class="govuk-heading-l">My organisations</h2>
+            <p></p>
+
+
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="to-deprecate">
+            <h2 class="govuk-heading-l">My groups</h2>
+            <p></p>
+
+
+          </div>
+          <!--  -->
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="deprecated">
+            <h2 class="govuk-heading-l">My profile setting</h2>
+            <p></p>
+
+
+          </div>
+
+
+          <!--  -->
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+    <!-- END TABBED CONTENT GRID ROW -->
+
+
+
+
+<!-- end page grid and column -->
+</div>
+  </div>
+
+
+
+
+
+  {% endblock %}

@@ -1,0 +1,155 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v10.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse the standards directory - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v10/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Published standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <!-- Change the page title here -->
+      <h1>
+        Published standards
+      </h1>
+      <p>Explore all published data standards and information codes of practice in England or view future standards.</p>
+      {% include "includes/search.html" %}
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      <!-- <p class="nhsuk-u-font-size-16" style="text-align: right"><a href="#">Open all</a></p> -->
+      {% include "includes/filters-setting.html" %}
+      {% include "includes/filters-topic.html" %}
+      {% include "includes/filters-status.html" %}
+      {% include "includes/select-type.html" %}
+
+    </div>
+
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">86 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-updated.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+<!-- <a href="browse-recent">submit</a> -->
+      <ul class="nhsuk-list table-list">
+        <!-- <li class="table-list-item">
+          <strong>Digital social care records</strong>
+          <p>
+          <span class="nhsuk-u-font-size-19">Collect core details about people using adult social care services such as medical history.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards &emsp;&emsp;Status: Draft &emsp;&emsp;Mandatory in England: Yes&emsp;&emsp;</span>
+          <span class="nhsuk-body-s" style="color:#4c6272;">To find out more about this and other Mandatory in England standards that's currently being developed view the <a href="community-roadmap">roadmap</a>.</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <strong>Medicines integration</strong>
+          <p>
+          <span class="nhsuk-u-font-size-19">Collect patient medication, allergy and intolerance data for exchange between care settings.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Draft &emsp;&emsp;Mandatory in England: Yes&emsp;&emsp;</span>
+          <span class="nhsuk-body-s" style="color:#4c6272;">To find out more about this and other Mandatory in England standards that's currently being developed view the <a href="community-roadmap">roadmap</a>.</span>
+          </p>
+        </li> -->
+        <li class="table-list-item">
+          <a href="active">SCCI2075: Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Discharge hospital patients with social care needs into social services.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Active&emsp;&emsp;Mandatory in England: Yes</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="deprecated">Common User Interface (CUI) standards</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Design and lay out common items such as addresses, dates, times, names and NHS numbers for display on screen.
+
+</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Deprecated&emsp;&emsp;Mandatory in England: Yes</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="retired">Read Clinical Terms Version 3</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Record patient findings and procedures in IT systems using a standard vocabulary across primary and secondary health and social care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Data definitions and terminologies&emsp;&emsp;Status: Retired&emsp;&emsp;Mandatory in England: Yes</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="active">Care homes view of shared care records</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Part of a suite of social care standards, The care homes view is the information that care home staff can see in a shared care record.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Active&emsp;&emsp;Mandatory in England: No</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="active">Community pharmacy standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The community pharmacy standard supports information sharing between community pharmacists and GP practices.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Active&emsp;&emsp;Mandatory in England: No</span>
+          </p>
+        </li>
+
+
+        <li class="table-list-item">
+          <a href="active">Diabetes information record standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Collect information for a person self-managing their diabetes to share with their clinician.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: Active&emsp;&emsp;Mandatory in England: Yes&emsp;&emsp;</span>
+          </p>
+        </li>
+
+
+      </ul>
+{% include "includes/pagination.html" %}
+
+    </div>
+  </div>
+
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3;
+    }
+  </style>
+
+
+
+{% endblock %}

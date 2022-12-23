@@ -1,0 +1,136 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v11.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Search results - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v11/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Search results</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <!-- Change the page title here -->
+    <h1>
+      Search results
+    </h1>
+      <p>Explore published standards and APIs used to format and exchange healthcare data in England.</p>
+    {% include "includes/search.html" %}
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p> -->
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-quarter">
+    {% include "includes/filters.html" %}
+    {% include "includes/filters-setting.html" %}
+    {% include "includes/filters-topic.html" %}
+    {% include "includes/filters-status.html" %}
+    {% include "includes/select-type.html" %}
+  </div>
+  <div class="nhsuk-grid-column-three-quarters">
+    <h3 class="nhsuk-heading-xs">
+      99 results
+    </h3>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half">  {% include "includes/select-updated.html" %}</div>
+      <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+      </div>
+    <ul class="nhsuk-list table-list">
+      <li class="table-list-item">
+        <a href="active">SCCI2075: Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">Discharge hospital patients with social care needs into social services.</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Last updated: 27 July 2022</span>
+        </p>
+      </li>
+      <li class="table-list-item">
+        <a href="deprecated">Common User Interface (CUI) standards</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">Design and lay out common items such as addresses, dates, times, names and NHS numbers for display on screen.
+
+</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--orange">Deprecated</strong>&emsp;&emsp;Last updated: 27 July 2022</span>
+        </p>
+      </li>
+      <li class="table-list-item">
+        <a href="retired">Read Clinical Terms Version 3</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">Record patient findings and procedures in IT systems using a standard vocabulary across primary and secondary health and social care.</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Data definitions and terminologies&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--red">Retired</strong>&emsp;&emsp;Last updated: 27 July 2022</span>
+        </p>
+      </li>
+      <li class="table-list-item">
+        <a href="active">Care homes view of shared care records</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">Part of a suite of social care standards, The care homes view is the information that care home staff can see in a shared care record.</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Last updated: 27 July 2022</span>
+        </p>
+      </li>
+      <li class="table-list-item">
+        <a href="active">Community pharmacy standard</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">The community pharmacy standard supports information sharing between community pharmacists and GP practices.</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Last updated: 27 July 2022</span>
+        </p>
+      </li>
+
+
+      <li class="table-list-item">
+        <a href="active">Diabetes information record standard</a>
+        <p>
+        <span class="nhsuk-u-font-size-19">Collect information for a person self-managing their diabetes to share with their clinician.</span><br><br>
+        <span class="nhsuk-body-s" style="color:#4c6272;">Type: Record standards&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Last updated: 27 July 2022&emsp;&emsp;</span>
+        </p>
+      </li>
+
+
+    </ul>
+    {% include "includes/pagination.html" %}
+  </div>
+</div>
+
+<style>
+  .table-list-item {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #bfc1c3;
+  }
+  .table-list-item:first-child {
+    border-top: 1px solid #bfc1c3;
+  }
+
+
+
+
+
+
+  </style>
+{% endblock %}

@@ -1,0 +1,138 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v11.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse the standards directory - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v11/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Published standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <!-- Change the page title here -->
+      <h1>
+        Published standards
+      </h1>
+      <p>Explore published standards and APIs used to format and exchange healthcare data in England.</p>
+      {% include "includes/search.html" %}
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      {% include "includes/filters-setting.html" %}
+      {% include "includes/filters-topic.html" %}
+      {% include "includes/filters-status.html" %}
+      {% include "includes/select-type-sept.html" %}
+
+    </div>
+
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">86 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-updated.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+<!-- <a href="browse-recent">submit</a> -->
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="active">Accessible Information</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Record the communication needs of patients with disabilities so they can get information in a format that meets their needs, for example Braille.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Data handling&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Date added: 17 March 2022&emsp;&emsp;</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="active">NHS Booking & Referral Standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Exchange data needed to book and see details of patient appointments across IT systems.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Technical specifications&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--grey">In development</strong>&emsp;&emsp;Date added: 27 July 2022</span>
+          </p>
+        </li>
+
+        <li class="table-list-item">
+          <a href="active">NHS Staff Identity</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Record NHS staff details consistently to make it easier for people to move between employers or to block appointments where necessary.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Electronic records&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Date added: 2 August 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="active">SCCI2075: Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Record and share information needed to discharge hospital patients with social care needs into social services.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Electronic records&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--green">Active</strong>&emsp;&emsp;Date added: 27 July 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="deprecated">Common User Interface (CUI) standards</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Design and lay out common items such as addresses, dates, times, names and NHS numbers for display on screen.
+
+</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Electronic records&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--orange">Deprecated</strong>&emsp;&emsp;Date added: 27 July 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="retired">Read Clinical Terms Version 3</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Record patient findings and procedures in IT systems using a standard vocabulary across primary and secondary health and social care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: Data dictionaries&emsp;&emsp;Status: <strong class="nhsuk-tag nhsuk-tag--red">Retired</strong>&emsp;&emsp;Date added: 27 July 2022</span>
+          </p>
+        </li>
+
+
+
+      </ul>
+{% include "includes/pagination.html" %}
+
+    </div>
+  </div>
+
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3;
+    }
+  </style>
+
+
+
+{% endblock %}

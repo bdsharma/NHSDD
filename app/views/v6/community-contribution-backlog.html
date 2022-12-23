@@ -1,0 +1,87 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v6.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+View the directory backlog - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">View the directory backlog</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-three-quarters">
+      <span class="nhsuk-caption-l">
+        Standards directory
+      </span>
+
+      <h1>Backlog</h1>
+
+      <p>This service is currently in development and is being tested and improved based on feedback.</p>
+      <p>You can see fixes and improvements the standards directory team have planned or are working on in their public backlog. </p>
+      <figure class="nhsuk-image">
+        <img class="nhsuk-image__img" src="/images/github-backlog.png" alt="GitHub discussions">
+        <figcaption class="nhsuk-image__caption">
+          GitHub standards directory backlog
+        </figcaption>
+      </figure>
+      <a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care/projects/1" class="nhsuk-button" target="_blank">View
+         the standards directory backlog on GitHub</a>
+         <p>(Opens a new window)</p>
+
+<h2>Report a problem or make a suggestion</h2>
+<p>There are 2 ways to report a problem with this service or suggest an improvement:</p>
+<ul class="nhsuk-list-bullet">
+  <li><a href="mailto:standards.directory@nhsx.nhs.uk">email standards.directory@nhsx.nhs.uk</a></li>
+  <li><a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care/projects/1">join the standards directory backlog Github</a> and raise an issue - you will need a <a href="https://github.com/">public Github account</a>
+</li>
+</ul>
+
+
+
+
+
+<br>
+
+{% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}

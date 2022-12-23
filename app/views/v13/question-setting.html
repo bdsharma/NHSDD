@@ -1,0 +1,242 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="guidance">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Check your legal requirements as a service provider</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner-v13.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <div class="nhsuk-form-group">
+
+        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">
+              What services do you provide?
+            </h1>
+          </legend>
+
+          <div class="nhsuk-hint" id="contact-hint">
+            Select all that apply
+          </div>
+
+          <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="Community" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Acute services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-2" name="setting" type="checkbox" value="Dentistry" aria-controls="conditional-contact-2" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                Ambulance services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-3" name="setting" type="checkbox" value="Hospital" aria-controls="conditional-contact-3" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+                Blood and transplant services
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-4" name="setting" type="checkbox" value="A" aria-controls="conditional-contact-4" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-4">
+                Care home with nursing
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-5" name="setting" type="checkbox" value="Inpatient" aria-controls="conditional-contact-5" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-5">
+                Care home without nursing
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-6" name="setting" type="checkbox" value="Outpatient" aria-controls="conditional-contact-6" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-6">
+                Community healthcare services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-7" name="setting" type="checkbox" value="Maternity" aria-controls="conditional-contact-7" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-7">
+                Community learning disability services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-8" name="setting" type="checkbox" value="Mental" aria-controls="conditional-contact-8" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-8">
+                Community mental health services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-9" name="setting" type="checkbox" value="Patient" aria-controls="conditional-contact-9" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-9">
+                Community substance isuse services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-10" name="setting" type="checkbox" value="Pharmacy" aria-controls="conditional-contact-10" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-10">
+                Dental services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="GP" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Diagnostic and/or screening services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="Social" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Doctors consultation services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="Urgent" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Doctors treatment services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="Ambulance" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Domiciliary care services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="NHS" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Extra care housing services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="A" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Hospice services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="disability" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Hospital for mental health or learning disability
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="substance" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Hospital for substance misuse
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="hyper" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Hyperbaric chamber services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="long" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Long-term conditions services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="mobile" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Mobile doctors services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="prison" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Prison healthcare services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="rehab" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Rehabilitation services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="remote" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Remote clinical advice services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="resi" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Residential substance misuse treatment or rehabilitation
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="shared" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Shared lives
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="specialist" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Specialist college services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="sls" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Supported living services
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="contact-1" name="setting" type="checkbox" value="ucg" aria-controls="conditional-contact-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                Urgent care services
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </div>
+      <button class="nhsuk-button">Submit</button>
+
+    </div>
+  </div>
+{% endblock %}
